@@ -1,0 +1,78 @@
+[
+	{
+		"key": "group_67c1cc0e31a05",
+		"title": "Page Template — Privacy Policy",
+		"fields": [
+			{
+				"key": "field_67c1cc0e8000e",
+				"label": "Use Choctaw Nation Privacy Policy",
+				"name": "use_choctaw_nation_privacy_policy",
+				"aria-label": "",
+				"type": "true_false",
+				"instructions": "If \"Yes,\" the page loads the privacy policy from choctawnation.com",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"relevanssi_exclude": 0,
+				"message": "Use Choctaw Nation Privacy Policy?",
+				"default_value": 1,
+				"allow_in_bindings": 0,
+				"ui_on_text": "",
+				"ui_off_text": "",
+				"ui": 1
+			},
+			{
+				"key": "field_67c1cc5b8000f",
+				"label": "Page Content",
+				"name": "page_content",
+				"aria-label": "",
+				"type": "wysiwyg",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": [
+					[
+						{
+							"field": "field_67c1cc0e8000e",
+							"operator": "!=",
+							"value": "1"
+						}
+					]
+				],
+				"wrapper": {
+					"width": "",
+					"class": "",
+					"id": ""
+				},
+				"relevanssi_exclude": 0,
+				"default_value": "",
+				"allow_in_bindings": 0,
+				"tabs": "all",
+				"toolbar": "full",
+				"media_upload": 0,
+				"delay": 0
+			}
+		],
+		"location": [
+			[
+				{
+					"param": "page_template",
+					"operator": "==",
+					"value": "page-templates/privacy.php"
+				}
+			]
+		],
+		"menu_order": 0,
+		"position": "normal",
+		"style": "default",
+		"label_placement": "top",
+		"instruction_placement": "label",
+		"hide_on_screen": "",
+		"active": true,
+		"description": "",
+		"show_in_rest": 0
+	}
+]
