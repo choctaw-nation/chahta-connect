@@ -129,7 +129,7 @@
 					"slug": "base",
 					"size": "1.35rem",
 					"name": "Body",
-					"fluid":false
+					"fluid": false
 				},
 				{
 					"slug": "sm",
@@ -319,6 +319,15 @@
 						"bottom": "var:preset|spacing|sm",
 						"top": "0"
 					}
+				},
+				"css": "text-wrap:pretty"
+			},
+			"link": {
+				"typography": {
+					"fontSize": "var:preset|font-size|base"
+				},
+				"color": {
+					"text": "var:preset|color|secondary"
 				}
 			}
 		},

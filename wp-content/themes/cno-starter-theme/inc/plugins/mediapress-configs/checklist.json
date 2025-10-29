@@ -6,10 +6,7 @@
 			"type": "custom",
 			"postTypes": [
 				"post",
-				"services",
-				"pages",
-				"additional-facility",
-				"clinic"
+				"page"
 			]
 		}
 	]

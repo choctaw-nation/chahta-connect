@@ -69,7 +69,7 @@ function cno_get_federated_privacy_policy(): string|WP_Error {
 		}
 		$page_data   = json_decode( $page_response, true );
 		$thirty_days = 60 * 60 * 24 * 30;
-		set_transient( 'cno_privacy_policy', acf_esc_html( $page_data['acf']['content'] ), $thirty_days );
+		set_transient( 'cno_privacy_policy', wp_kses_post( $page_data['acf']['content'] ), $thirty_days );
 		$policy = get_transient( 'cno_privacy_policy' );
 	}
 	return $policy;
