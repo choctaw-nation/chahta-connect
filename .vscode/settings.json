@@ -24,6 +24,8 @@
 		"prettier.useTabs": false
 	},
 	"cSpell.words": [
+		"alignfull",
+		"alignwide",
 		"Appender",
 		"bloginfo",
 		"chahtacondev",
@@ -36,6 +38,7 @@
 		"loginout",
 		"mediapress",
 		"nextpage",
+		"NONBLOCKING",
 		"prio",
 		"trackbacks",
 		"xxxxl"
