@@ -34,8 +34,8 @@ $font-family-monospace:
 	monospace;
 
 // LINKS
-$link-color: $primary;
-$link-hover-color: rgba($primary, 0.8);
+$link-color: $secondary;
+$link-hover-color: rgba($secondary, 0.8);
 
 // HEADINGS
 $headings-font-family: v.$font-headings;
@@ -91,9 +91,9 @@ $input-btn-padding-y-sm: 0.25rem;
 
 $navbar-light-active-color: $secondary;
 $navbar-light-hover-color: $secondary;
-$navbar-light-color: white;
-$navbar-light-icon-color: white;
-$navbar-light-toggler-border-color: white;
+$navbar-light-color: $secondary;
+$navbar-light-icon-color: $secondary;
+$navbar-light-toggler-border-color: $secondary;
 $navbar-light-brand-color: white;
 $navbar-light-brand-hover-color: $secondary;
 
@@ -103,7 +103,7 @@ $navbar-light-brand-hover-color: $secondary;
 * Offcanvas
 */
 
-// $offcanvas-bg-color: $primary;
+$offcanvas-bg-color: white;
 $offcanvas-color: white;
 
 // ================================================

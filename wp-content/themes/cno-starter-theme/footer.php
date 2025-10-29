@@ -9,56 +9,31 @@
 
 <footer class="footer text-bg-secondary py-3">
 	<div class="container-fluid d-flex flex-column row-gap-4">
-		<div class="row">
 			<?php
 			if ( has_nav_menu( 'footer_menu' ) ) {
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'footer_menu',
-						'menu_class'      => 'footer-nav list-unstyled navbar-nav flex-row',
+						'menu_class'      => 'footer-nav list-unstyled navbar-nav flex-column flex-md-row flex-wrap flex-grow-1 w-100 justify-content-center gap-4 text-center text-md-start',
 						'container'       => 'nav',
-						'container_class' => 'navbar',
+						'container_class' => 'navbar w-auto align-self-center',
 						'depth'           => 1,
 					)
 				);
 			}
 			?>
-		</div>
-		<div class="row">
-			<div class="col-4">
-				<a href="<?php echo esc_url( site_url() ); ?>" class="logo">
+		<div class="row justify-content-center gx-0">
+				<a href="<?php echo esc_url( site_url() ); ?>" class="logo d-block">
 					<figure class="logo-img mb-0 h-100">
 						<?php cno_echo_svg( '/img/logo-white.svg', 'Chahta Connect Logo' ); ?>
 					</figure>
 				</a>
-				<div class="row">
-					<div class="social-icons">
-						<?php
-						$socials = array(
-							array(
-								'icon_class' => 'fa-brands fa-facebook-f',
-								'href'       => 'https://facebook.com/',
-								'aria-label' => 'Follow Us on Facebook',
-							),
-							array(
-								'icon_class' => 'fa-brands fa-instagram',
-								'href'       => 'https://instagram.com',
-								'aria-label' => 'Follow Us on Instagram',
-							),
-						);
-						?>
-						<?php foreach ( $socials as $social ) : ?>
-						<a href="<?php echo $social['href']; ?>" class="social" target="_blank" rel="noopener noreferrer" aria-label="<?php echo $social['aria-label']; ?>">
-							<i class="<?php echo "text-white fa-3x {$social['icon_class']}"; ?>"></i>
-						</a>
-						<?php endforeach; ?>
-					</div>
-				</div>
-			</div>
 		</div>
 		<div class="row">
 			<div class="col text-center" id="copyright">
-				<?php echo '&copy;&nbsp;' . date( 'Y' ) . '&nbsp;Choctaw Nation of Oklahoma'; // phpcs:ignore WordPress.DateTime.RestrictedFunctions.date_date ?>
+				<p class="mb-0 fs-root">&copy;
+					<?php echo '&nbsp;' . gmdate( 'Y' ); ?> <a class="fs-root" href="https://www.choctawnation.com" target="_blank">Choctaw Nation of Oklahoma</a>
+				</p>
 			</div>
 		</div>
 	</div>

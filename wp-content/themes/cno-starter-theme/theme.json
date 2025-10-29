@@ -321,6 +321,14 @@
 					}
 				},
 				"css": "text-wrap:pretty"
+			},
+			"link": {
+				"typography": {
+					"fontSize": "var:preset|font-size|base"
+				},
+				"color": {
+					"text": "var:preset|color|secondary"
+				}
 			}
 		},
 		"typography": {
