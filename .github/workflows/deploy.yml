@@ -10,7 +10,7 @@ jobs:
         uses: choctaw-nation/shared-github-actions/.github/workflows/deploy.yml@main
         with:
             WPE_ENV: chahtaconnect # WP Engine environment name
-            theme_name: cno-starter-theme
+            theme_name: chahta-connect
         secrets: inherit
 
     deploy-stg:
@@ -19,7 +19,7 @@ jobs:
         uses: choctaw-nation/shared-github-actions/.github/workflows/deploy.yml@main
         with:
             WPE_ENV: chahtaconstg # WP Engine environment name
-            theme_name: cno-starter-theme
+            theme_name: chahta-connect
         secrets: inherit
 
     deploy-dev:
@@ -28,7 +28,7 @@ jobs:
         uses: choctaw-nation/shared-github-actions/.github/workflows/deploy.yml@main
         with:
             WPE_ENV: chahtacondev # WP Engine environment name
-            theme_name: cno-starter-theme
+            theme_name: chahta-connect
         secrets: inherit
 
     # Run Playwright tests on Dev
