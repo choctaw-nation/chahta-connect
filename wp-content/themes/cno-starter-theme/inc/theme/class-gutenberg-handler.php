@@ -20,7 +20,6 @@ class Gutenberg_Handler {
 	public function __construct() {
 		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_block_assets' ) );
 		add_action( 'after_setup_theme', array( $this, 'cno_block_theme_support' ), 50 );
-		// add_action( 'init', array( $this, 'register_block_pattern_categories' ) ); phpcs:ignore Squiz.PHP.CommentedOutCode.Found
 		add_filter( 'block_editor_settings_all', array( $this, 'restrict_gutenberg_ui' ), 10, 1 );
 		add_filter( 'allowed_block_types_all', array( $this, 'restrict_block_types' ), 10, 2 );
 		add_filter( 'use_block_editor_for_post_type', array( $this, 'handle_page_templates' ) );
@@ -101,26 +100,65 @@ class Gutenberg_Handler {
 			$allowed_block_types = array_keys( $registered_blocks );
 		}
 		if ( ! $is_administrator ) {
-			$allowed_block_types = array(
-				'core/heading',
-				'core/list',
-				'core/list-item',
-				'core/image',
-				'core/button',
-				'core/buttons',
-				'core/paragraph',
-				'core/columns',
-				'core/column',
-				'core/gallery',
-				'core/pattern',
-				'core/table',
-				'core/quote',
-				'core/cover',
-				'core/block',
+			$disallowed_blocks = array(
+				'core/archives',
+				'core/avatar',
+				'core/calendar',
+				'core/categories',
+				'core/comments',
+				'core/comment-author-name',
+				'core/comment-content',
+				'core/comment-date',
+				'core/comment-edit-link',
+				'core/comment-reply-link',
+				'core/comment-template',
+				'core/comment-pagination-previous',
+				'core/comments-author-avatar',
+				'core/comments-pagination',
+				'core/comments-pagination-next',
+				'core/comments-pagination-numbers',
+				'core/comments-title',
+				'core/home-link',
 				'core/file',
-				'gravityforms/form',
+				'core/latest-comments',
+				'core/latest-posts',
+				'core/loginout',
+				'core/missing',
+				'core/media-text',
+				'core/navigation',
+				'core/navigation-link',
+				'core/navigation-submenu',
+				'core/nextpage',
+				'core/page-list-item',
+				'core/page-list',
+				'core/post-author',
+				'core/post-author-biography',
+				'core/post-author-name',
+				'core/post-comment',
+				'core/post-comments',
+				'core/post-comments-count',
+				'core/post-comments-form',
+				'core/post-comments-link',
+				'core/post-date',
+				'core/post-navigation-link',
+				'core/post-terms',
+				'core/rss',
+				'core/search',
+				'core/site-logo',
+				'core/site-tagline',
+				'core/site-title',
+				'core/social-link',
+				'core/social-links',
+				'core/tag-cloud',
+				'core/term-description',
+				'core/video',
 			);
-			return $allowed_block_types;
+			return array_filter(
+				$allowed_block_types,
+				function ( $block ) use ( $disallowed_blocks ) {
+					return ! in_array( $block, $disallowed_blocks, true );
+				}
+			);
 		}
 		return $allowed_block_types;
 	}

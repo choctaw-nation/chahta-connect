@@ -88,14 +88,6 @@ class Theme_Init {
 		/** Loads the Theme Functions File (to keep the actual functions.php file clean) */
 		require_once $base_path . '/theme/theme-functions.php';
 
-		$acf_classes = array(
-			'generator',
-			'image',
-		);
-		foreach ( $acf_classes as $acf_class ) {
-			require_once $base_path . "/acf/acf-classes/class-{$acf_class}.php";
-		}
-
 		$asset_loaders = array(
 			'enum-enqueue-type',
 			'class-asset-loader',
@@ -116,8 +108,8 @@ class Theme_Init {
 			'gutenberg-handler'     => 'Gutenberg_Handler',
 			'gravity-forms-handler' => null,
 			'bootstrap-pagination'  => null,
-			'post-override'         => null,
-			'acf-handler'           => 'ACF_Handler',
+			'post-override'         => 'Post_Override',
+			'acf-handler'           => null,
 
 		);
 		foreach ( $utility_files as $utility_file => $class_name ) {
@@ -251,6 +243,7 @@ class Theme_Init {
 		foreach ( $post_types as $post_type ) {
 			$this->disable_post_type_support( $post_type );
 		}
+		add_post_type_support( 'page', 'excerpt' );
 	}
 
 	/**
