@@ -1,7 +1,7 @@
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config.js' );
 const RemoveEmptyScriptsPlugin = require( 'webpack-remove-empty-scripts' );
 
-const THEME_NAME = 'cno-starter-theme';
+const THEME_NAME = 'chahta-connect';
 const THEME_DIR = `/wp-content/themes/${ THEME_NAME }`;
 
 /**
