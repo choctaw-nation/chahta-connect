@@ -13,8 +13,8 @@
 		}
 	],
 	"scripts": {
-		"phpcs": "phpcs wp-content/themes/cno-starter-theme/ --extensions=php --ignore=wp-content/themes/cno-starter-theme/dist/",
-		"phpcbf": "phpcbf wp-content/themes/cno-starter-theme/ --extensions=php --ignore=wp-content/themes/cno-starter-theme/dist/"
+		"phpcs": "phpcs wp-content/themes/chahta-connect/ --extensions=php --ignore=wp-content/themes/chahta-connect/dist/",
+		"phpcbf": "phpcbf wp-content/themes/chahta-connect/ --extensions=php --ignore=wp-content/themes/chahta-connect/dist/"
 	},
 	"config": {
 		"allow-plugins": {

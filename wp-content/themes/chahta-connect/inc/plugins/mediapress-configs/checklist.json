@@ -1,0 +1,13 @@
+{
+	"$schema": "checklist-config-schema.json",
+	"items": [
+		{
+			"name": "excerpt_is_valid",
+			"type": "custom",
+			"postTypes": [
+				"post",
+				"page"
+			]
+		}
+	]
+}

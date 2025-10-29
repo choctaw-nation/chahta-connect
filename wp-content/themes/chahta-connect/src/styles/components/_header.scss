@@ -1,0 +1,37 @@
+@use "../abstracts/mixins" as m;
+
+.navbar-brand {
+	--size: 15rem;
+
+	max-width: var(--size);
+	width: var(--size);
+}
+
+.header-nav {
+	.nav-link {
+		--bs-nav-link-font-size: var(--wp--preset--font-size--base);
+	}
+
+	.dropdown-toggle {
+		--bs-btn-box-shadow: none;
+		--bs-btn-color: white;
+		--bs-btn-hover-color: var(--bs-secondary);
+
+		padding: 0;
+
+		&:hover {
+			box-shadow: none;
+			transform: none;
+		}
+	}
+
+	.dropdown:hover {
+		.btn-group > a {
+			color: var(--bs-secondary);
+		}
+
+		.dropdown-toggle {
+			color: var(--bs-secondary);
+		}
+	}
+}

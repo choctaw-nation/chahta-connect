@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as v;
+
+:root {
+	--font-headings: var(--wp--preset--font-family--headings,#{v.$font-headings});
+	--font-body: var(--wp--preset--font-family--body,#{v.$font-body});
+	--transition-standard: #{v.$transition-standard};
+}
