@@ -11,26 +11,20 @@ export default function excerptCheck( item: ChecklistItem ): ChecklistItem {
 		return item;
 	}
 	const isCurrentPostPending = select( editorStore ).isCurrentPostPending();
+	const status = isCurrentPostPending ? 'NONBLOCKING' : 'BLOCKING';
 	const excerpt = select( editorStore ).getEditedPostAttribute( 'excerpt' );
 	if ( ! excerpt || excerpt.length === 0 ) {
 		return {
 			...item,
-			status: isCurrentPostPending ? 'NONBLOCKING' : 'BLOCKING',
+			status,
 			message: 'Please provide a valid excerpt for the post.',
 		};
 	}
 	if ( excerpt.length > 160 ) {
 		return {
 			...item,
-			status: isCurrentPostPending ? 'NONBLOCKING' : 'BLOCKING',
+			status,
 			message: 'Excerpt must be 160 characters or less.',
-		};
-	}
-	if ( excerpt.length < 120 ) {
-		return {
-			...item,
-			status: isCurrentPostPending ? 'NONBLOCKING' : 'BLOCKING',
-			message: 'Excerpt must be at least 120 characters.',
 		};
 	}
 
