@@ -9,11 +9,8 @@
 
 get_header();
 ?>
-<main <?php post_class(); ?>>
-	<?php
-	the_title( '<h1>', '</h1>' );
-	the_content();
-	?>
+<main <?php post_class(); ?> style="margin-block:var(--wp--preset--spacing--xl);">
+	<?php the_content(); ?>
 </main>
 <?php
 get_footer();

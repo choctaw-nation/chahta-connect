@@ -25,7 +25,7 @@ use ChoctawNation\Navwalker;
 			<a class="navbar-brand my-2 align-items-md-center" href="<?php echo esc_url( site_url() ); ?>" class="logo" aria-label="to Home Page">
 				<?php cno_echo_svg( '/img/logo-1.svg', 'Chahta Connect Logo' ); ?>
 			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false"
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false"
 					aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>

@@ -203,6 +203,11 @@
 			"blockGap": "var:preset|spacing|base"
 		},
 		"blocks": {
+			"core/columns": {
+				"spacing": {
+					"blockGap": "var:preset|spacing|base"
+				}
+			},
 			"core/heading": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|headings"
