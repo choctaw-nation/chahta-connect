@@ -7,7 +7,7 @@
 
 get_header();
 ?>
-<div <?php post_class( 'alignfull has-global-padding is-layout-constrained' ); ?> style="margin-block:var(--wp--preset--spacing--xl);">
+<div <?php post_class( 'alignfull has-global-padding is-layout-constrained' ); ?>>
 	<?php the_content(); ?>
 </div>
 <?php

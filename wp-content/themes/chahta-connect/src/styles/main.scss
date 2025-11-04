@@ -5,3 +5,11 @@
 // Components
 @use "./components/header";
 @use "./components/footer";
+
+// stylelint-disable-next-line selector-class-pattern
+.gform_button.button[type="submit"] {
+	--gf-ctrl-btn-color-primary: white;
+	--gf-ctrl-btn-font-size: var(--wp--preset--font-size--root);
+	--gf-ctrl-btn-padding-x: var(--wp--preset--spacing--lg);
+	--gf-ctrl-btn-padding-y: var(--wp--preset--spacing--sm);
+}
