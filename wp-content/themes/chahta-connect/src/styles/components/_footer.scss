@@ -3,9 +3,18 @@
 	--bs-link-hover-color-rgb: var(--bs-primary-rgb);
 
 	.logo {
-		--size: 35rem;
+		--size: 15rem;
 
 		max-width: var(--size);
 		width: var(--size);
+	}
+
+	@media (width >= 768px) {
+		.logo {
+			--size: 35rem;
+
+			max-width: var(--size);
+			width: var(--size);
+		}
 	}
 }
