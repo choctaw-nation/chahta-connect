@@ -7,6 +7,15 @@
 	width: var(--size);
 }
 
+@media (width >= 768px) {
+	.navbar-brand {
+		--size: 15rem;
+
+		max-width: var(--size);
+		width: var(--size);
+	}
+}
+
 .header-nav {
 	.nav-link {
 		--bs-nav-link-font-size: var(--wp--preset--font-size--base);
