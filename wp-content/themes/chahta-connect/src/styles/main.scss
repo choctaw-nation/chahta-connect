@@ -5,6 +5,7 @@
 // Components
 @use "./components/header";
 @use "./components/footer";
+@use "./vendors/gravityforms";
 
 // stylelint-disable-next-line selector-class-pattern
 .gform_button.button[type="submit"] {
@@ -24,7 +25,7 @@
 	position: absolute;
 	top: 16px;
 	right: -45px;
-	background: #3aa6c6;
+	background: var(--bs-accent);
 	color: white;
 	font-weight: 700;
 	text-align: center;
@@ -42,4 +43,13 @@
 	justify-content: center;
 	display: flex;
 	height: 30px;
+}
+
+// stylelint-disable-next-line selector-class-pattern
+.wp-element-button {
+	&:hover,
+	&:focus,
+	&:focus-visible {
+		background-color: var(--bs-secondary);
+	}
 }

@@ -7,7 +7,7 @@
 
 ?>
 
-<footer class="footer text-bg-secondary py-3">
+<footer class="footer text-bg-primary py-3">
 	<div class="container d-flex flex-column align-items-center row-gap-4">
 		<div class="row justify-content-center gx-0">
 			<a href="<?php echo esc_url( site_url() ); ?>" class="logo d-block">

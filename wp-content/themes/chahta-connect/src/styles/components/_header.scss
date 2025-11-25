@@ -1,7 +1,7 @@
 @use "../abstracts/mixins" as m;
 
 .navbar-brand {
-	--size: 25rem;
+	--size: 15rem;
 
 	max-width: var(--size);
 	width: var(--size);
@@ -9,7 +9,7 @@
 
 @media (width >= 768px) {
 	.navbar-brand {
-		--size: 15rem;
+		--size: 25rem;
 
 		max-width: var(--size);
 		width: var(--size);
@@ -40,6 +40,20 @@
 		}
 
 		.dropdown-toggle {
+			color: var(--bs-secondary);
+		}
+	}
+}
+
+.navbar {
+	--bs-navbar-color: var(--bs-primary);
+	--bs-navbar-hover-color: var(--bs-secondary);
+	--bs-navbar-active-color: var(--bs-secondary);
+
+	.nav-link {
+		&:hover,
+		&:focus,
+		&:focus-visible {
 			color: var(--bs-secondary);
 		}
 	}

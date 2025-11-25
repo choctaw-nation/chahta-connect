@@ -1,0 +1,52 @@
+/* stylelint-disable selector-class-pattern */
+.gform_next_button,
+.gform_button {
+	background-color: var(--bs-primary) !important;
+	color: var(--bs-light) !important;
+
+	&:hover,
+	&:focus,
+	&:focus-visible {
+		background-color: var(--bs-secondary) !important;
+	}
+}
+
+/* stylelint-disable-next-line CssSyntaxError */
+.gform-theme--framework {
+	.gf_step:first-child {
+		.gf_step_number {
+			background-color: var(--bs-primary-light) !important;
+		}
+	}
+
+	/* Completed Step */
+	.gf_step_completed {
+		/* stylelint-disable-next-line no-descending-specificity */
+		.gf_step_number {
+			background-color: var(--bs-primary) !important;
+			color: var(--bs-light) !important;
+
+			--gf-field-pg-steps-number-bg-color-complete: var(
+				--bs-primary
+			) !important;
+			--gf-field-pg-steps-number-border-color-complete: var(
+				--bs-primary
+			) !important;
+			--gf-local-color: var(--bs-light) !important;
+
+			&::after {
+				color: var(--bs-light) !important;
+			}
+		}
+	}
+
+	/* Active Step */
+	.gf_step_active {
+		/* stylelint-disable-next-line no-descending-specificity */
+		.gf_step_number {
+			background-color: var(--bs-secondary) !important;
+			color: var(--bs-dark) !important;
+		}
+	}
+}
+/* stylelint-enable selector-class-pattern */
