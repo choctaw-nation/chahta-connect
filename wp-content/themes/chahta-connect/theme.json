@@ -55,7 +55,7 @@
 				},
 				{
 					"color": "#4D6474",
-					"name": "Car2d Price Background",
+					"name": "Card Price Background",
 					"slug": "card-price-bg-color"
 				},
 				{
@@ -74,14 +74,9 @@
 					"slug": "gray"
 				},
 				{
-					"color": "#FFFFFF",
-					"name": "White",
-					"slug": "white"
-				},
-				{
-					"color": "#000000",
-					"name": "Black",
-					"slug": "black"
+					"color": "#FBFDFF",
+					"name": "Light",
+					"slug": "light"
 				}
 			]
 		},

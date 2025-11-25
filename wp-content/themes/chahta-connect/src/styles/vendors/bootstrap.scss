@@ -12,13 +12,21 @@
 * Also, you can add custom colors with the sass `map` below
 */
 
-$primary: #b1872f;
-$secondary: #072247;
+$primary: #00558c;
+$secondary: #b5e3d8;
 $success: #296438;
+$dark: #000e16;
+$light: #fbfdff;
+$danger: #c02b0a;
 $custom-colors: (
-	"accent": $success,
-	"black": black,
-	"white": white,
+	"primary-light": #bfd5e2,
+	"primary-dark": #002238,
+	"secondary-light": #edf8f5,
+	"secondary-dark": #485b56,
+	"accent": #e04f39,
+	"accent-dark": #5a2017,
+	"card-price-bg-color": #4d6474,
+	"gray": #959391,
 );
 
 // ================================================
