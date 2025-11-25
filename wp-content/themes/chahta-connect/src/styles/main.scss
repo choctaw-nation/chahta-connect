@@ -37,17 +37,6 @@
 	z-index: 2;
 }
 
-.best-value::after {
-	content: "";
-	position: absolute;
-	top: 54px;
-	right: 21px;
-	border: 10px solid transparent;
-	border-top-color: #2a7f98;
-	transform: rotate(45deg);
-	z-index: 1;
-}
-
 .btn-rates {
 	align-items: center;
 	justify-content: center;
