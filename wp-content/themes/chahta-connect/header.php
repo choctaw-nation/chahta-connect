@@ -20,10 +20,10 @@ use ChoctawNation\Navwalker;
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	<header class="container-fluid border-bottom border-5 border-secondary" id="site-header">
-		<nav class="navbar navbar-expand-lg py-0">
+	<header class="bg-white top-0 sticky-top container-fluid border-bottom border-5 border-secondary" id="site-header">
+		<nav class="navbar navbar-expand-lg py-0 container">
 			<a class="navbar-brand my-2 align-items-md-center" href="<?php echo esc_url( site_url() ); ?>" class="logo" aria-label="to Home Page">
-				<?php cno_echo_svg( '/img/logo-1.svg', 'Chahta Connect Logo' ); ?>
+				<?php cno_echo_svg( '/img/logo.svg', 'Chahta Connect Logo' ); ?>
 			</a>
 			<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false"
 					aria-label="Toggle navigation">

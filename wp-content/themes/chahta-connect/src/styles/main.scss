@@ -13,3 +13,37 @@
 	--gf-ctrl-btn-padding-x: var(--wp--preset--spacing--lg);
 	--gf-ctrl-btn-padding-y: var(--wp--preset--spacing--sm);
 }
+
+.best-value {
+	position: relative;
+	overflow: hidden;
+}
+
+.best-value::before {
+	content: "Best Value";
+	position: absolute;
+	top: 16px;
+	right: -45px;
+	background: #3aa6c6;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	transform: rotate(45deg);
+	width: 160px;
+	padding: 6px 0;
+	box-shadow: 0 4px 6px rgb(0 0 0 / 20%);
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	z-index: 2;
+}
+
+.best-value::after {
+	content: "";
+	position: absolute;
+	top: 54px;
+	right: 21px;
+	border: 10px solid transparent;
+	border-top-color: #2a7f98;
+	transform: rotate(45deg);
+	z-index: 1;
+}

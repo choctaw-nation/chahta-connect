@@ -8,13 +8,13 @@
 ?>
 
 <footer class="footer text-bg-secondary py-3">
-	<div class="container-fluid d-flex flex-column row-gap-4">
+	<div class="container d-flex flex-column align-items-center row-gap-4">
 		<div class="row justify-content-center gx-0">
-				<a href="<?php echo esc_url( site_url() ); ?>" class="logo d-block">
-					<figure class="logo-img mb-0 h-100">
-						<?php cno_echo_svg( '/img/logo-white.svg', 'Chahta Connect Logo' ); ?>
-					</figure>
-				</a>
+			<a href="<?php echo esc_url( site_url() ); ?>" class="logo d-block">
+				<figure class="logo-img mb-0 h-100">
+					<?php cno_echo_svg( '/img/logo-white.svg', 'Chahta Connect Logo' ); ?>
+				</figure>
+			</a>
 		</div>
 		<?php
 		if ( has_nav_menu( 'footer_menu' ) ) {
