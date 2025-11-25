@@ -9,3 +9,6 @@
 .fs-root {
 	font-size: var(--wp--preset--font-size--root) !important;
 }
+.top-0{
+ top: var(--wp-admin--admin-bar--height, 0) !important;
+}
