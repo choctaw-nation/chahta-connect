@@ -14,29 +14,69 @@
 			"gradients": [],
 			"palette": [
 				{
-					"color": "#b1872f",
+					"color": "#00558C",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#072247",
+					"color": "#BFD5E2",
+					"name": "Primary Light",
+					"slug": "primary-light"
+				},
+				{
+					"color": "#002238",
+					"name": "Primary Dark",
+					"slug": "primary-dark"
+				},
+				{
+					"color": "#B5E3D8",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
 				{
-					"color": "#296438",
+					"color": "#EDF8F5",
+					"name": "Secondary Light",
+					"slug": "secondary-light"
+				},
+				{
+					"color": "#485B56",
+					"name": "Secondary Dark",
+					"slug": "secondary-dark"
+				},
+				{
+					"color": "#E04F39",
 					"name": "Accent",
 					"slug": "accent"
 				},
 				{
-					"color": "white",
-					"name": "White",
-					"slug": "white"
+					"color": "#5A2017",
+					"name": "Accent Dark",
+					"slug": "accent-dark"
 				},
 				{
-					"color": "#000000",
-					"name": "Black",
-					"slug": "black"
+					"color": "#4D6474",
+					"name": "Card Price Background",
+					"slug": "card-price-bg-color"
+				},
+				{
+					"color": "#C02B0A",
+					"name": "Danger",
+					"slug": "danger"
+				},
+				{
+					"color": "#000E16",
+					"name": "Dark",
+					"slug": "dark"
+				},
+				{
+					"color": "#959391",
+					"name": "Gray",
+					"slug": "gray"
+				},
+				{
+					"color": "#FBFDFF",
+					"name": "Light",
+					"slug": "light"
 				}
 			]
 		},
