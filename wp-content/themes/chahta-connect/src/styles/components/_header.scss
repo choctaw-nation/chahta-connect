@@ -47,14 +47,15 @@
 
 .navbar {
 	--bs-navbar-color: var(--bs-primary);
-	--bs-navbar-hover-color: var(--bs-secondary);
-	--bs-navbar-active-color: var(--bs-secondary);
+	--bs-navbar-hover-color: var(--bs-primary-dark);
+	--bs-navbar-active-color: var(--bs-primary-dark);
 
 	.nav-link {
 		&:hover,
 		&:focus,
 		&:focus-visible {
-			color: var(--bs-secondary);
+			color: var(--bs-primary-dark);
+			text-decoration: underline;
 		}
 	}
 }

@@ -50,13 +50,12 @@
 	&:hover,
 	&:focus,
 	&:focus-visible {
-		background-color: var(--bs-primary-dark;
+		background-color: var(--bs-primary-dark);
 	}
 }
 
-/* TABLET ONLY (782px–992px): force 2 columns and center them */
-@media (width >= 782px) and (width <= 1200px) {
-	.tablet-50-percent {
+@media (width >= 782px) and (width <= 991px) {
+	.three-column-pricing-card {
 		display: flex !important;
 		flex-wrap: wrap !important;
 		justify-content: center !important; /* <-- centers all columns */
@@ -64,26 +63,26 @@
 		width: 100% !important;
 		margin: 0 auto;
 		overflow: hidden;
-	}
 
-	.tablet-50-percent .wp-block-column {
-		flex: 0 0 50% !important;
-		max-width: 50% !important;
-		width: 50% !important;
-		flex-grow: 0 !important;
-		flex-shrink: 0 !important;
-		margin: 0 !important;
-		box-sizing: border-box;
+		.wp-block-column {
+			flex: 0 0 50% !important;
+			max-width: 50% !important;
+			width: 50% !important;
+			flex-grow: 0 !important;
+			flex-shrink: 0 !important;
+			margin: 0 !important;
+			box-sizing: border-box;
+		}
 	}
 }
 
 /* MOBILE: one column centered */
 @media (width <= 781px) {
-	.tablet-50-percent {
+	.three-column-pricing-card {
 		justify-content: center !important;
 	}
 
-	.tablet-50-percent .wp-block-column {
+	.three-column-pricing-card .wp-block-column {
 		flex: 0 0 100% !important;
 		max-width: 100% !important;
 		width: 100% !important;
