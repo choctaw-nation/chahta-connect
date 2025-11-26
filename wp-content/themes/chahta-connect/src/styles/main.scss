@@ -18,24 +18,24 @@
 .best-value {
 	position: relative;
 	overflow: hidden;
-}
 
-.best-value::before {
-	content: "Best Value";
-	position: absolute;
-	top: 16px;
-	right: -45px;
-	background: var(--bs-accent);
-	color: white;
-	font-weight: 700;
-	text-align: center;
-	transform: rotate(45deg);
-	width: 160px;
-	padding: 6px 0;
-	box-shadow: 0 4px 6px rgb(0 0 0 / 20%);
-	font-size: 14px;
-	letter-spacing: 0.5px;
-	z-index: 2;
+	&::before {
+		content: "Best Value";
+		position: absolute;
+		top: 16px;
+		right: -45px;
+		background: var(--bs-accent);
+		color: white;
+		font-weight: 700;
+		text-align: center;
+		transform: rotate(45deg);
+		width: 160px;
+		padding: 6px 0;
+		box-shadow: 0 4px 6px rgb(0 0 0 / 20%);
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		z-index: 2;
+	}
 }
 
 .btn-rates {
@@ -50,6 +50,28 @@
 	&:hover,
 	&:focus,
 	&:focus-visible {
-		background-color: var(--bs-secondary);
+		background-color: var(--bs-primary-dark);
+	}
+}
+
+@media (width >= 782px) and (width <= 991px) {
+	.three-column-pricing-card {
+		display: flex !important;
+		flex-wrap: wrap !important;
+		justify-content: center !important; /* <-- centers all columns */
+		gap: 20px; /* optional spacing */
+		width: 100% !important;
+		margin: 0 auto;
+		overflow: hidden;
+
+		.wp-block-column {
+			flex: 0 0 50% !important;
+			max-width: 50% !important;
+			width: 50% !important;
+			flex-grow: 0 !important;
+			flex-shrink: 0 !important;
+			margin: 0 !important;
+			box-sizing: border-box;
+		}
 	}
 }

@@ -2,6 +2,14 @@
 	--bs-link-color-rgb: 255, 255, 255;
 	--bs-link-hover-color-rgb: var(--bs-primary-rgb);
 
+	a {
+		&:hover,
+		&:focus,
+		&:focus-visible {
+			color: var(--bs-gray);
+		}
+	}
+
 	.logo {
 		--size: 15rem;
 

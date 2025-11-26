@@ -18,6 +18,7 @@ $success: #296438;
 $dark: #000e16;
 $light: #fbfdff;
 $danger: #c02b0a;
+$primary-dark: #002238;
 $custom-colors: (
 	"primary-light": #bfd5e2,
 	"primary-dark": #002238,
@@ -97,13 +98,13 @@ $input-btn-padding-y-sm: 0.25rem;
 * Navbar
 */
 
-$navbar-light-active-color: $secondary;
-$navbar-light-hover-color: $secondary;
-$navbar-light-color: $secondary;
-$navbar-light-icon-color: $secondary;
-$navbar-light-toggler-border-color: $secondary;
+$navbar-light-active-color: $primary-dark;
+$navbar-light-hover-color: $primary-dark;
+$navbar-light-color: $primary;
+$navbar-light-icon-color: $primary;
+$navbar-light-toggler-border-color: $primary-dark;
 $navbar-light-brand-color: white;
-$navbar-light-brand-hover-color: $secondary;
+$navbar-light-brand-hover-color: $primary-dark;
 
 // ================================================
 
