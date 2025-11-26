@@ -18,24 +18,24 @@
 .best-value {
 	position: relative;
 	overflow: hidden;
-}
 
-.best-value::before {
-	content: "Best Value";
-	position: absolute;
-	top: 16px;
-	right: -45px;
-	background: var(--bs-accent);
-	color: white;
-	font-weight: 700;
-	text-align: center;
-	transform: rotate(45deg);
-	width: 160px;
-	padding: 6px 0;
-	box-shadow: 0 4px 6px rgb(0 0 0 / 20%);
-	font-size: 14px;
-	letter-spacing: 0.5px;
-	z-index: 2;
+	.best-value::before {
+		content: "Best Value";
+		position: absolute;
+		top: 16px;
+		right: -45px;
+		background: var(--bs-accent);
+		color: white;
+		font-weight: 700;
+		text-align: center;
+		transform: rotate(45deg);
+		width: 160px;
+		padding: 6px 0;
+		box-shadow: 0 4px 6px rgb(0 0 0 / 20%);
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		z-index: 2;
+	}
 }
 
 .btn-rates {
@@ -80,13 +80,13 @@
 @media (width <= 781px) {
 	.three-column-pricing-card {
 		justify-content: center !important;
-	}
 
-	.three-column-pricing-card .wp-block-column {
-		flex: 0 0 100% !important;
-		max-width: 100% !important;
-		width: 100% !important;
-		margin: 0 !important;
-		padding: 0 !important;
+		.wp-block-column {
+			flex: 0 0 100% !important;
+			max-width: 100% !important;
+			width: 100% !important;
+			margin: 0 !important;
+			padding: 0 !important;
+		}
 	}
 }
