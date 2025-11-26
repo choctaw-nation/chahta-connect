@@ -1,13 +1,15 @@
 /* stylelint-disable selector-class-pattern */
 .gform_next_button,
 .gform_button {
-	background-color: var(--bs-primary) !important;
-	color: var(--bs-light) !important;
-
-	&:hover,
 	&:focus,
-	&:focus-visible {
+	&:active,
+	&:focus-visible,
+	&:active:focus,
+	&:focus:not(:focus-visible),
+	&.show,
+	&:active.show {
 		background-color: var(--bs-primary-dark) !important;
+		border-color: var(--bs-primary-dark) !important;
 	}
 }
 
@@ -44,9 +46,8 @@
 	.gf_step_active {
 		/* stylelint-disable-next-line no-descending-specificity */
 		.gf_step_number {
-			background-color: var(--bs-secondary) !important;
+			background-color: var(--bs-primary-light) !important;
 			color: var(--bs-dark) !important;
 		}
 	}
 }
-/* stylelint-enable selector-class-pattern */
