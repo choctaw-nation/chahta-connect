@@ -1,7 +1,7 @@
 @use "../abstracts/mixins" as m;
 
 .navbar-brand {
-	--size: 20rem;
+	--size: 18rem;
 
 	max-width: var(--size);
 	width: var(--size);
