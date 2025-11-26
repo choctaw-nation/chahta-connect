@@ -51,35 +51,3 @@
 		}
 	}
 }
-
-.gform_ajax {
-	box-sizing: border-box;
-	margin-top: 11px; /* Adjust as needed for positioning */
-	margin-left: 10px; /* Adjust as needed for positioning */
-	border: 3px solid var(--bs-primary); /* Main color of the spinner */
-	border-left: 3px solid var(--bs-dark); /* Transparent to create the "gap" */
-	border-top: 3px solid var(--bs-primary-dark); /* Lighter shade for depth */
-	border-right: 3px solid var(--bs-primary-light); /* Medium shade for depth */
-	animation: spinner 1.1s infinite linear; /* Apply the animation */
-	border-radius: 50%;
-	width: 160px;
-	height: 16px;
-	position: absolute; /* Allows for precise positioning relative to parent */
-	z-index: 1;
-}
-
-.gform_wrapper .gform_body .gform_page_footer .gform_button {
-	color: var(--bs-light) !important;
-	background-color: var(--bs-primary) !important;
-}
-
-// Spinner overrides
-.spinner-border,
-.spinner-grow {
-	color: var(--bs-primary) !important;
-	border-color: var(--bs-primary-dark) !important;
-}
-
-.text-small {
-	font-size: 0.875rem !important;
-}
