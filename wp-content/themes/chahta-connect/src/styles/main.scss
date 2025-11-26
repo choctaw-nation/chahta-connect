@@ -19,7 +19,7 @@
 	position: relative;
 	overflow: hidden;
 
-	.best-value::before {
+	&::before {
 		content: "Best Value";
 		position: absolute;
 		top: 16px;
@@ -72,21 +72,6 @@
 			flex-shrink: 0 !important;
 			margin: 0 !important;
 			box-sizing: border-box;
-		}
-	}
-}
-
-/* MOBILE: one column centered */
-@media (width <= 781px) {
-	.three-column-pricing-card {
-		justify-content: center !important;
-
-		.wp-block-column {
-			flex: 0 0 100% !important;
-			max-width: 100% !important;
-			width: 100% !important;
-			margin: 0 !important;
-			padding: 0 !important;
 		}
 	}
 }
