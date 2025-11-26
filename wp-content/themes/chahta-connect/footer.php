@@ -21,9 +21,9 @@
 			wp_nav_menu(
 				array(
 					'theme_location'  => 'footer_menu',
-					'menu_class'      => 'footer-nav list-unstyled navbar-nav flex-column flex-md-row flex-wrap flex-grow-1 w-100 justify-content-center gap-4 text-center text-md-start',
+					'menu_class'      => 'footer-nav list-unstyled navbar-nav flex-column flex-md-row flex-wrap flex-grow-1 w-100 gap-4 d-flex justify-content-evenly',
 					'container'       => 'nav',
-					'container_class' => 'navbar w-auto align-self-center',
+					'container_class' => 'navbar w-100 align-self-center',
 					'depth'           => 1,
 				)
 			);
