@@ -1,53 +1,8 @@
-/* stylelint-disable selector-class-pattern */
-.gform_next_button,
-.gform_button {
-	&:focus,
-	&:active,
-	&:focus-visible,
-	&:active:focus,
-	&:focus:not(:focus-visible),
-	&.show,
-	&:active.show {
-		background-color: var(--bs-primary-dark) !important;
-		border-color: var(--bs-primary-dark) !important;
-	}
-}
-
-/* stylelint-disable-next-line CssSyntaxError */
-.gform-theme--framework {
-	.gf_step:first-child {
-		.gf_step_number {
-			background-color: var(--bs-primary-light) !important;
-		}
-	}
-
-	/* Completed Step */
-	.gf_step_completed {
-		/* stylelint-disable-next-line no-descending-specificity */
-		.gf_step_number {
-			background-color: var(--bs-primary) !important;
-			color: var(--bs-light) !important;
-
-			--gf-field-pg-steps-number-bg-color-complete: var(
-				--bs-primary
-			) !important;
-			--gf-field-pg-steps-number-border-color-complete: var(
-				--bs-primary
-			) !important;
-			--gf-local-color: var(--bs-light) !important;
-
-			&::after {
-				color: var(--bs-light) !important;
-			}
-		}
-	}
-
-	/* Active Step */
-	.gf_step_active {
-		/* stylelint-disable-next-line no-descending-specificity */
-		.gf_step_number {
-			background-color: var(--bs-primary-light) !important;
-			color: var(--bs-dark) !important;
-		}
-	}
+/* stylelint-disable-next-line selector-class-pattern */
+body .gform_wrapper {
+	--gf-field-pg-steps-number-bg-color-active: var(--bs-primary-light);
+	--gf-ctrl-btn-bg-color-hover-primary: var(--bs-primary-dark);
+	--gf-ctrl-btn-border-color-hover-primary: var(--bs-primary-dark);
+	--gf-ctrl-btn-bg-color-focus-primary: var(--bs-primary-dark);
+	--gf-ctrl-btn-border-color-focus-primary: var(--bs-primary-dark);
 }
