@@ -240,7 +240,7 @@ class Navwalker extends \Walker_Nav_Menu {
 			$attributes['class'] .= 'dropdown-item';
 		}
 
-		$attributes['class'] .= ' nav-link';
+		$attributes['class'] .= ' nav-link py-3 py-xl-0';
 		return $this->build_atts( $attributes );
 	}
 }
